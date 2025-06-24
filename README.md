@@ -14,4 +14,5 @@ Basic projects that taught me DOM manipulation and events.
 
 - Calculator
 - Counter
-- Dice Roller
+- Guess Game
+- Random Num
