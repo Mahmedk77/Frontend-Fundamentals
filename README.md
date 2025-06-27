@@ -1,4 +1,4 @@
-# Frontend Fundamentals Projects
+# Frontend Fundamentals Projects 
 
 This repository showcases a series of frontend web projects I built while learning HTML, CSS, and JavaScript from scratch. Projects are categorized by complexity to reflect my progress over time.
 

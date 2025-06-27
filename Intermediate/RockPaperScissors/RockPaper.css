@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --Font-color: hsl(0, 0%, 20%);
+    --btn-bg: hsl(197, 71%, 55%);
+    --btn-hover: hsl(197, 71%, 73%);
+    --result-color: hsl(120, 73%, 40%);
+    --comp-color: tomato;
+
+}
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap:2.4rem;
+    & .myH1{
+        font-size: 4.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--Font-color);
+
+    }
+}
+.choices .reactions{
+    border: none;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--btn-bg);
+    text-align: center;
+    cursor: pointer;
+    font-size: 6.2rem;
+    
+
+
+}
+.reactions:hover{
+    background-color: var(--btn-hover);
+}
+.text{
+    width: 35rem;
+    height: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--Font-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+    justify-content: start;
+    align-items: center;
+    font-size: 3.2rem;
+    line-height: 3rem;
+    /* border: 5px solid red; */
+
+}
+.textOutput3{
+    margin: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 80rem;
+    font-size: 5.2rem;
+    color: var(--Font-color);
+}
+.greenclass,#green{
+
+    color: var(--result-color);
+
+}
+.redclass,#red{
+    color: red;
+
+}
