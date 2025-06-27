@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image:  url(./bgIMG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    & .text{
+        font-size: 8.2rem;
+        color: hsla(217, 32%, 58%, 0.984);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+        font-family: monospace;
+        font-weight: bold;
+
+
+    }
+}
