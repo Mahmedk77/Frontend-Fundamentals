@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 100%, 88%);
+
+}
+.container{
+
+    background-color: #ece1a9;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    /* border: 1px solid red; */
+    width: 50rem;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    & .blocks{
+        color: hsl(32, 100%, 30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        transition: background-color 0.3s ease-out;
+        &.blocks-1{
+            border-bottom: 5px solid hsl(32, 100%, 30%) ;
+        
+        }
+        &.blocks-2{
+            border: 5px solid  hsl(32, 100%, 30%)  ;
+            border-top: none;
+        }
+        &.blocks-3{
+            border-left:5px solid  hsl(32, 100%, 30%)  ;
+            border-right:5px solid  hsl(32, 100%, 30%)  ;
+        } 
+        &:hover{
+            background-color: hsl(34, 78%, 80%);
+            cursor: pointer;
+        }
+
+    }
+}
+#reset{
+    border: none;
+    /* outline: none; */
+    border-radius: 1rem;
+    margin: 2rem;
+    width: 15rem;
+    height: 5rem;
+    cursor: pointer;;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #ece1a9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: hsl(20, 100%, 30%);
+    transition: background-color 0.3s ease-out;
+    &:hover{
+        background-color: hsl(34, 78%, 80%);
+        cursor: pointer;
+
+    }
+}
+#info{
+    
+    font-size: 3rem;
+    margin: 0.5rem;
+    width: auto;
+    color: hsl(32, 100%, 30%);
+}
