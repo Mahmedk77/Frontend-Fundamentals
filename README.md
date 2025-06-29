@@ -16,3 +16,11 @@ Basic projects that taught me DOM manipulation and events.
 - Counter
 - Guess Game
 - Random Num
+
+### 🔸 Intermediate
+Projects involving timers, random logic, and basic games.
+
+- Digital Clock
+- PasswordGenerator
+- Rock Paper Scissors
+- TicTacToe Game
