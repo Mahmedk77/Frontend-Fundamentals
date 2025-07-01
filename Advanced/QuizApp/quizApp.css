@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --body-color: #031e4f;
+    --bg-color: #fefefe;
+    --font-color: #1b243e ;
+    --btn-color: #031c48;
+    --crt-color: #9de0ba;
+    --wrg-color: #ff9c90
+    --line-color: #979797;
+}
+body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins','sans-serif';
+    background-color: var(--body-color);
+    background-color: hsl(120, 100%, 90%);
+}
+.container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 1.2rem;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 60rem;
+    min-height: 10rem;
+    & h1{
+        font-size: 2.5rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            bottom: -10px;
+            content: '';
+            width: 55rem;
+            border-bottom: 2px solid var(--line-color);
+        }
+    }
+    & h3{
+        font-size: 2rem;
+        margin: 2rem 0rem;
+    }
+    & .nextBtn{
+        border: none;
+        color: var(--bg-color);
+        background-color: var(--btn-color);
+        margin: 2rem auto;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        border-radius: 0.5rem;
+        &:hover{
+            background-color: hsl(219, 93%, 20%);
+        }
+    }
+}
+.container .optionBank{
+    height: 22.2rem;
+    width: 55rem;
+   
+    /* border: 1px solid red; */
+    & .option{
+        cursor: pointer;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: start;
+        height: 4rem;
+        margin-bottom: 2rem;
+        width:54.8rem ;
+        background-color: var(--bg-color);
+        border: 0.1rem solid var(--font-color);
+        &:hover{
+            background-color: hsl(0, 0%, 96%);
+        }
+    }
+
+}
