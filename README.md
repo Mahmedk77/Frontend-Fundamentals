@@ -30,8 +30,8 @@ Full UI apps with multiple features.
 
 - Quiz App
 - TicTacToe Game
-<!-- - Spotify Clone
-- ToDo List App -->
+- Spotify Clone
+- ToDo List App
 
 ## 🔄 Active Development Plan
 I'm currently improving these projects over the next few weeks — follow along for updates!
