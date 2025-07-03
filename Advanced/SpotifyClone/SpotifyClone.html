@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./SpotifyClone.css">
+    <link rel="icon" href="./pngegg.png" type="image/png">
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="nav-bar">
+            <div class="logo-div">
+                <img src="./Utils/Logos/monochrome_large.png" alt="spotify logo" title="Spotify" >
+            </div>
+            <div class="search-bar" >
+                <i class="fa fa-house" title="Home" id="houseIcon"></i>
+                <div class="bar-div">
+                    <i class="fa-sharp fa fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What do you want to play?" title="Search">
+                    <div class="basket">
+                        <i class="fa fa-basket-shopping" title="Browse"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="log-div">
+            <button class="log signup-btn">
+                Sign up
+            </button>
+            <button class="log login-btn">
+                Log in
+            </button>
+            </div>
+        </nav>
+    </header>
+   
+    <section class="continer">
+        <div class="container">
+            <div class="subset subset-1">
+                <div class="S1-heading">
+                    <div class="left-heading">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <h1>Your Library</h1>    
+                    </div>
+                    <i class="fa-duotone fa-solid fa-plus"></i>
+                </div>
+
+                <div class="block-container">
+                    <div class="S1-block b2">
+                        <h1>
+                            Create your first playlist
+                        </h1>
+                        <h2>
+                            It's easy, we'll help you
+                        </h2>
+                        <button class='block-btn' >Create Playlist</button>
+                    </div>
+                    <div class="S1-block b1">
+                    <h1>
+                        Let's find some podcasts to follow
+                    </h1>
+                    <h2>
+                        We'll keep you updated on new episodes
+                    </h2>
+                    <button class='block-btn podcast' >Browse podcasts</button>
+                    </div>
+                    </div>
+                    <div class="upperLayer">
+                        <div class="UL-text">
+                            <p>Legal</p>
+                            <p>Safety & Privacy Center</p>
+                            <p>Privacy Policy</p>
+                            <p>Cookies</p>
+                            <p>About Ads</p>
+                            <p>Accessibility</p>
+                        </div>
+                        <p class="UL-text1">Cookies</p>
+                        <!-- <button>
+                            <img src="./worldmap.png" alt="">
+                            English
+                        </button> -->
+                    </div>
+
+
+                </div>
+            <main class="subset subset-2">
+                <!-- <div class="main-content-heading"> -->
+                    
+                    <div class="main-content popularArtists">
+                        <div class="main-content-heading">
+                                <h1>
+                                    Popular artists
+                                </h1>
+                                <p>Show all</p>
+                        </div>
+                        <div class="main-content-flexbox artistsFlexbox">
+                            <div class="c1">
+                                <img class="img artistImg" src="./Utils/Artists/AbdSuadais.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="0"></i>
+                                <h1>Abd Al Rahman</h1>
+                                <h2>Artist</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img artistImg" src="./Utils/Artists/AtifAslam-artist.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="1"></i>
+                                <h1>Atif Aslam</h1>
+                                <h2>Artist</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img artistImg" src="./Utils/Artists/Siedd.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="2"></i>              
+                                <h1>Siedd</h1>
+                                <h2>Artist</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img artistImg" src="./Utils/Artists/AnuvJain-Artisti.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="3"></i>
+
+                                <h1>Anuv Jain</h1>
+                                <h2>Artist</h2>
+                            </div>
+                            <div class="c1">
+                                <img  class="img artistImg" src="./Utils/Artists/ArijitSingh-Artist.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="4"></i>
+
+                                <h1>Arjit Singh</h1>
+                                <h2>Artist</h2>
+                            </div>
+                            <div class="c1">
+                                <img  class="img artistImg" src="./Utils/Artists/MishrayRashid.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="5"></i>
+                                <h1>Mishray Rashid</h1>
+                                <h2>Artist</h2>
+                        </div>
+                        
+                        </div>
+
+                    </div>
+                    <div class="main-content popularAlbums">
+                        <div class="main-content-heading">
+                                <h1>
+                                    Popular albums
+                                </h1>
+                                <p>Show all</p>
+                        </div>
+                        <div class="main-content-flexbox albumsFlexbox">
+                            <div class="c1">
+                                <img  class="img albumImg" src="./Utils/Albums/AbdSuadais-Album.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="6"></i>
+                                <h1>Surah Rahman</h1>
+                                <h2>Abdul Al Rahman</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg"  src="./Utils/Albums/TheWayOf.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="7"></i>
+
+                                <h1>The Way Of Tears</h1>
+                                <h2>Muhammad Al Muqit</h2>
+                            </div>
+                            <div class="c1">
+                                <img  class="img albumImg" src="./Utils/Albums/SieddAblbum.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="8"></i>              
+                                <h1>Half My Deen</h1>
+                                <h2>Siedd</h2>
+                            </div>
+                            <div class="c1">
+                                <img  class="img albumImg" src="./Utils/Albums/ImamFeysal-Album.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="9"></i>
+
+                                <h1>Surah Mulk</h1>
+                                <h2>Imam Feysal</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Albums/KunAnta.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="10"></i>
+
+                                <h1>Kun Anta</h1>
+                                <h2>Humood</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Albums/TaweelAlShawq-Album.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn" id="11"></i>
+                                <h1>Taweel Al Shawq</h1>
+                                <h2>Ahmed Bukhatir</h2>
+                        </div>
+                        
+                        </div>
+
+                    </div>
+                    <div class="main-content popularAlbums">
+                        <div class="main-content-heading">
+                                <h1>
+                                    Popular radio
+                                </h1>
+                                <p>Show all</p>
+                        </div>
+                        <div class="main-content-flexbox">
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Radios/ArjitRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+                                <!-- <h1>Pritam</h1> -->
+                                <h2>With Mithoon, Sachin-Jigar, Jeet Gannguli...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Radios/KaifiKhalilRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Atif Aslam</h1> -->
+                                <h2>With Abdul Hannan, Anuv jain, Darshan...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Radios/DijitRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>              
+                                <!-- <h1>Arjit Singh</h1> -->
+                                <h2>With Karan Aujla, AP Dhilon, Shubh and...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Radios/APDhillonRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Anuv Jain</h1> -->
+                                <h2>With Shubh, Karan Ajula, Gurinder Gill...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Radios/ShubhRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1></h1> -->
+                                <h2>With AP Dillon, Karan Ajula, Sidhu Moose...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg"  src="./Utils/Radios/NusratFatehRadio.jpeg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Karan Aujla</h1> -->
+                                <h2>With Noor Jehan, Madhur Sharma,...</h2>
+                        </div>
+                        
+                        </div>
+
+                    </div>
+                    <div class="main-content popularAlbums">
+                        <div class="main-content-heading">
+                                <h1>
+                                    Featured Charts
+                                </h1>
+                                <p>Show all</p>
+                        </div>
+                        <div class="main-content-flexbox">
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart1.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+                                <!-- <h1>/Pritam</h1> -->
+                                <h2>Your weekly update of the most played trac...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart2.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Atif Aslam</h1> -->
+                                <h2>Your weekly update of the most played trac... </h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart3.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>              
+                                <!-- <h1>Arjit Singh</h1> -->
+                                <h2>Your daily update of the most played trac...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart4.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Anuv Jain</h1> -->
+                                <h2>Your daily update of the most played trac...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart5.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa-solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Diljit Dosanjh</h1> -->
+                                <h2>Your daily update of the most viral trac...</h2>
+                            </div>
+                            <div class="c1">
+                                <img class="img albumImg" src="./Utils/Charts/chart6.jpg" alt="Image of an artist">
+                                <i class="fa-sharp fa solid fa-circle-play playBtn"></i>
+
+                                <!-- <h1>Karan Aujla</h1> -->
+                                <h2>Your daily update of the most viral trac...</h2>
+                        </div>
+                        
+                        </div>
+
+                    </div>                    
+                    <div class=" footer-div">
+                        <div class="footer-text">
+                            <h1>Company</h1>
+                            <h2>About</h2>
+                            <h2>Jobs</h2>
+                            <h2>For the Record</h2>
+                        </div>
+                        <div class="footer-text">
+                            <h1>Communities</h1>
+                            <h2>For Artists</h2>
+                            <h2>Developers</h2>
+                            <h2>Advertising</h2>
+                            <h2>Investors</h2>
+                            <h2>Vendors</h2>
+                        </div>
+                        <div class="footer-text">
+                            <h1>Useful links</h1>
+                            <h2>Support</h2>
+                            <h2>Free Mobile App</h2>
+                        </div>
+                        <div class="footer-text">
+                            <h1>Spotify Plans</h1>
+                            <h2>Premium Individual</h2>
+                            <h2>Premium Duo</h2>
+                            <h2>Premium Family</h2>
+                            <h2>Premium Student</h2>
+                            <h2>Spotify Free</h2>
+                        </div>
+                        
+                        <div class="footer-text">
+                            <div class="icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+
+            </main>
+
+    </section>
+    <footer class="foot">
+        <div class="imgDivFooter">
+            <img src="" alt="song image" id="footerImage">
+            <div class="imgDivFooter-text">
+                <h4  id="artistNameFooter">
+                    Abd Al Rahman
+                </h4>
+                
+                <h4 id="artistSongFooter">
+                    Surah Rahman
+                </h4>
+    
+            </div>
+           
+        </div>
+    <div class="footControls">
+        <div class="footer-icons">
+            <i class="fa-solid fa-backward-step steps" id="backward-step"></i>
+            <i class="fa fa-circle-play" id="footerPlayBtn"></i>
+            <i class="fa-solid fa-forward-step steps" id="forward-step"></i>
+        </div>
+        <div class="progress">
+            <!-- <h4 class="timeStamp currentTime" id="currentTime">00:00</h4> -->
+            <input type="range" value="0" min="0" max="100" id="progressBar">
+            <!-- <h4 class="timeStamp totalTime" id="totalTime">00:00</h4> -->
+        </div>
+    </div>
+       
+    </footer>
+<script src="./SpotifyClone.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.7%;
+}
+body{
+    height: 100vh;
+    background: rgb(133,133,241);
+    background: linear-gradient(135deg,#233177,#3c175a 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal
+}
+.container{
+    width: 40rem;
+    min-height: 1rem;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 2rem;
+    & h1{
+        color: #1b2a50;
+        font-weight: bold;
+    }
+    & .block-1{
+        height:10rem ;
+    }
+    & .textInput{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 20px;
+        border-radius: 3rem;
+        height:3rem;
+        width: 32rem;
+        border: none;
+        background-color:#ebedee ;
+        margin: 1rem 0;
+        position: relative;
+        z-index: 0;     
+    }
+} 
+/* to remove the dark outline when clicked */
+.textInput:focus{
+    outline: none;
+}
+.container .addBtn{
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 2px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    position: relative;
+    top: -5.2rem;
+    left: 26rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    z-index: 1;
+    border-radius: 3rem ;
+    width: 10rem;
+    height: 4.35rem;
+    border: none;
+    color: #ebedee;
+    background-color:#ff643b ;
+}
+.block-2{
+    width: 36.5rem;
+    min-height: 1rem;
+    padding: 0rem;
+    & .repetitive-div{
+        display: flex;
+        gap: 1rem;
+        position: relative;
+        cursor: pointer;
+    
+    & .displayText{
+        /* position: absolute; */
+        top: -0.15rem;
+        left: 3rem;
+        color:#ebedee ;
+        color: hsl(200, 8%, 10%);
+        font-size: 1.8rem;
+        font-weight: 400;
+        display: inline;
+    }
+    & .completedBtn{
+        box-shadow: hsla(0, 0%, 0%, 0) 0px 6px 24px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+        border: 2.1px solid hsl(200, 8%, 80%) ;
+        background-color: #fefefe;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    & .clearBtn{
+        height: 3rem;    
+        aspect-ratio: 1;
+        border-radius: 50%;
+        margin-left: auto;
+        border: none;
+        background-color: #fefefe;
+        font-size: 2rem;
+        color: hsl(200, 8%, 25%);
+    }}
+}
+.clearNew{
+    box-shadow: hsla(0, 0%, 0%, 0) 0px 6px 24px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ff643b;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+/* !HOVER SECTION */
+
+.repetitive-div:hover{
+
+        .clearBtn:hover{
+    background-color:  hsl(200, 8%, 92%);
+    cursor: pointer;
+}
+
+    
+    
+}
